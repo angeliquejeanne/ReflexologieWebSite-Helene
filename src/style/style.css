@@ -1,0 +1,294 @@
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: snow;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.main-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid var(--color-third);
+  z-index: 50;
+}
+
+.main-content .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 0;
+}
+
+.main-content .bg-image {
+  position: absolute;
+  background-image: url("https://raw.githubusercontent.com/jeanne-s-dev/ReflexologieWebSite-Helene/main/src/img/225690550_106623021721234_5136931006424740545_n.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-content #bg_menu {
+  cursor: pointer;
+  height: 27px;
+  width: 27px;
+  margin: 0px;
+  overflow: visible;
+  position: relative;
+  z-index: 2;
+  padding: 20px 20px;
+  top: 55px;
+  left: 80px;
+  cursor: pointer;
+}
+
+.main-content #bg_menu span,
+.main-content #bg_menu span::before,
+.main-content #bg_menu span::after {
+  background: red;
+  display: block;
+  height: 2px;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.main-content #bg_menu span::before,
+.main-content #bg_menu span::after {
+  content: "";
+}
+
+.main-content #bg_menu span {
+  right: 0px;
+  top: 13px;
+  width: 27px;
+}
+
+.main-content #bg_menu span::before {
+  left: 0px;
+  top: -10px;
+  width: 27px;
+}
+
+.main-content #bg_menu span::after {
+  left: 0px;
+  top: 10px;
+  width: 27px;
+}
+
+.main-content #bg_menu.close span {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 13px;
+  width: 27px;
+}
+
+.main-content #bg_menu.close span::before {
+  top: 0px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 27px;
+}
+
+.main-content #bg_menu.close span::after {
+  top: 0px;
+  left: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  opacity: 0;
+  width: 0;
+}
+
+.main-content #menu_open {
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  padding-top: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-image: url("https://raw.githubusercontent.com/jeanne-s-dev/ReflexologieWebSite-Helene/main/src/img/225690550_106623021721234_5136931006424740545_n.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-content #menu_open .overlayy {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  margin-top: -100px;
+}
+
+.main-content #menu_open li {
+  list-style: none;
+}
+
+.main-content #menu_open li a {
+  display: inline-block;
+  position: relative;
+  color: #F22E2E;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left bottom, left top, from(#F22E2E), to(#8C1837));
+  background: linear-gradient(to top, #F22E2E, #8C1837);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+}
+
+.main-content #menu_open li a:hover {
+  border-bottom: 2px solid #8C1837;
+}
+
+.main-content #menu_open.overlay {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 100px;
+  top: 0;
+  position: absolute;
+  opacity: 2;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.main-content .content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+  z-index: 0;
+  position: relative;
+}
+
+.main-content .content-wrap .logo {
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  border-radius: 999px;
+  margin: 10rem auto 0;
+}
+
+.main-content .content-wrap h1 {
+  padding: 80px 0px 50px 0px;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left bottom, left top, from(#F22E2E), to(#8C1837));
+  background: linear-gradient(to top, #F22E2E, #8C1837);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animation apparition titre, texte & btn */
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    width: 100%;
+    height: 100vh;
+  }
+  .main-content #bg_menu {
+    top: 40px;
+    left: 20px;
+    padding: 0;
+  }
+  .main-content .content-wrap {
+    width: 100%;
+    height: 100%;
+  }
+  .main-content .content-wrap .logo {
+    width: 100px;
+    height: 100px;
+    margin: 1rem auto 0;
+  }
+  .main-content .content-wrap h1 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

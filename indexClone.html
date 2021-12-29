@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hélène Réflexologue plantaire</title>
+    <meta name="description" content="Hélène réflexologue plantaire située dans les Hauts-de-France, dans le Pas-de-Calais, Calonne-Ricouart plus précisemment.">
+
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+</head>
+<body>
+    <header class="main-content opacity-header">
+        <div class="overlay"></div>
+        <!-- <div class="overlay"></div> -->
+
+        <div class="bg-image">
+            <!-- <img src="./src/img/reflexologie-plantaire.jpg" alt=""> -->
+        </div>
+
+        <div id="bg_menu">
+            <span></span>
+        </div>
+        
+        <div id="menu_open">
+            <div class="overlayy"></div>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Reflexologie</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Gallery</a>
+                </li>
+                <li>
+                    <a href="">Horraire</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-wrap">
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <h1>Reflexologue Plantaire</h1>
+        </div>
+
+    </header>
+
+    <section id="showcase" class="grid">
+        
+       Hello 🗺  
+        
+    </section>
+    
+    <script>
+    const menu = document.getElementById('bg_menu');
+    const overlay = document.getElementById('menu_open');
+    menu.addEventListener('click',function(){
+    this.classList.toggle("close");
+    overlay.classList.toggle("overlay");
+    });
+
+    </script>
+</body>
+</html>
