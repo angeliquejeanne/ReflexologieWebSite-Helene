@@ -20,37 +20,33 @@
             <!-- <img src="./src/img/reflexologie-plantaire.jpg" alt=""> -->
         </div>
 
-        <nav>
-    
-            <ul class="nav-links">
-                <li class="mobile-menu">
-                    <i class="fas fa-bars"></i>
+        <div id="bg_menu">
+            <span></span>
+        </div>
+        
+        <div id="menu_open">
+            <div class="overlayy"></div>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="./src/links/lareflexologie.html">Reflexologie</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Gallery</a>
+                </li>
+                <li>
+                    <a href="">Horraire</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
                 </li>
             </ul>
-
-        </nav>
-
-        <ul class="mobile-drawer">
-            <i class="fas fa-times"></i>
-            <li>
-                <a href="">Home</a>
-            </li>
-            <li>
-                <a href="">Reflexologie</a>
-            </li>
-            <li>
-                <a href="">About</a>
-            </li>
-            <li>
-                <a href="">Gallery</a>
-            </li>
-            <li>
-                <a href="">Horraire</a>
-            </li>
-            <li>
-                <a href="">Contact</a>
-            </li>
-        </ul>
+        </div>
 
         <div class="content-wrap">
             <div class="logo">
@@ -58,19 +54,49 @@
             </div>
             <h1>Reflexologue Plantaire</h1>
         </div>
+
     </header>
 
-    <section id="showcase" class="grid">
+    <!-- <section class="content__part-one">
+        <div class="left">
+            <h2>Qu'est ce que la réflexologie...</h2>
+            <p>Lorem ipsum dolor sit amet. Et aspernatur doloribus non earum aut facere incidunt! Qui aspernatur explicabo 
+                et praesentium sapiente est voluptatem quisquam. Ex optio labore vel aliquam harum et beatae sed laboriosam rerum. 
+            </p>
+            <p>
+                <a href="">Venez découvrir plus en détails...</a>
+            </p>
+        </div>
+        <div class="right">
+            <img width="340" src="./src/img/massage-pieds-asmr.jpg" alt="massage et stimulation des points d'accupression dans une ambiance amsr, de détante et bien-être">
+        </div>
+    </section> -->
+
+    <!-- <section class="content__part-two">
+        <div class="right">
+            <h2>Votre praticienne</h2>
+            <p>Lorem ipsum dolor sit amet. Et aspernatur doloribus non earum aut facere incidunt! Qui aspernatur explicabo 
+                et praesentium sapiente est voluptatem quisquam. Ex optio labore vel aliquam harum et beatae sed laboriosam rerum. 
+            </p>
+            <p>
+                <a href="">La suite de mon parcours...</a>
+            </p>
+        </div>
+        <div class="left">
+            <img width="340" src="./src/img/portrait.jpg" alt="photo portrait d'Hélène votre praticienne, qui vous accueille toujours avec le sourir">
+        </div>
+    </section> -->
+
+
+    <footer>
+        <div class="mentionslegales">
+            <a href="">Mentions Légales</a>
+        </div>
+        <p>Copyright - <a href="">Web & I</a> - 2021</p>
+    </footer>
         
-       Hello 🗺  
-        
-    </section>
+
+    <script src="./src/script/menu.js"></script>
     
-    <script src="https://code.jquery.com/jquery-3.5.0.slim.js"></script>
-    <script>
-        $(".fa-bars, .fa-times, .mobile-drawer a").click(() => {
-        $(".mobile-drawer").toggleClass("active");
-    });
-    </script>
 </body>
 </html>
