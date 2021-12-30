@@ -136,6 +136,8 @@ body {
   opacity: 0;
   text-align: center;
   padding-top: 20px;
+  -webkit-animation: slide-right 4s forwards;
+          animation: slide-right 4s forwards;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-image: url("https://raw.githubusercontent.com/jeanne-s-dev/ReflexologieWebSite-Helene/main/src/img/225690550_106623021721234_5136931006424740545_n.jpg");
@@ -242,28 +244,28 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* Animation apparition titre, texte & btn */
+/* Animations*/
 @-webkit-keyframes slide-right {
   0% {
-    -webkit-transform: translateX(-300px);
-            transform: translateX(-300px);
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
     opacity: 1;
   }
 }
 @keyframes slide-right {
   0% {
-    -webkit-transform: translateX(-300px);
-            transform: translateX(-300px);
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
     opacity: 1;
   }
 }
