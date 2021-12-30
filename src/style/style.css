@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: snow;
+  background-color: #fa0000;
   height: 100vh;
   width: 100%;
   top: 0;
@@ -333,8 +333,9 @@ body {
 
 footer {
   background-color: var(--color-bgyellow);
-  height: 55px;
+  height: 50px;
   width: 100%;
+  padding: 5px 0px;
 }
 
 footer .mentionslegales {
@@ -350,7 +351,6 @@ footer .mentionslegales {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0px;
 }
 
 footer .mentionslegales a {
@@ -387,10 +387,13 @@ footer .mentionslegales p a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    padding-top: 15px;
+  }
+  footer .mentionslegales a {
+    padding: 10px 0px 0px;
+    margin: 5px auto;
   }
   footer .mentionslegales p {
-    padding: 15px 0px;
+    padding: 5px 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
