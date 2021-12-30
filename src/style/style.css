@@ -13,11 +13,21 @@ body {
   left: 0;
 }
 
+:root {
+  --color-primary: #F22E2E;
+  --color-secondary: #F29F05;
+  --color-tertiary: #F27983;
+  --color-linear: linear-gradient(to bottom,#F22E2E 30%, #8C1837 85%);
+  --color-text: #000;
+  --color-white: #fff;
+  --color-bgyellow: #F2DCB3;
+  --color-bg-neutre: #D9C6BA;
+}
+
 .main-content {
   position: relative;
   width: 100%;
   height: 100%;
-  border-bottom: 3px solid var(--color-third);
   z-index: 50;
 }
 
@@ -60,9 +70,9 @@ body {
 .main-content #bg_menu span,
 .main-content #bg_menu span::before,
 .main-content #bg_menu span::after {
-  background: red;
+  background: var(--color-linear);
   display: block;
-  height: 2px;
+  height: 3px;
   opacity: 1;
   position: absolute;
   -webkit-transition: 0.3s ease-in-out;
@@ -158,22 +168,21 @@ body {
 .main-content #menu_open li a {
   display: inline-block;
   position: relative;
-  color: #F22E2E;
+  color: var(--color-text);
   font-size: 32px;
   margin-bottom: 30px;
   text-decoration: none;
   border-bottom: 2px solid transparent;
   padding-bottom: 10px;
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left bottom, left top, from(#F22E2E), to(#8C1837));
-  background: linear-gradient(to top, #F22E2E, #8C1837);
+  background: var(--color-linear);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 1;
 }
 
 .main-content #menu_open li a:hover {
-  border-bottom: 2px solid #8C1837;
+  border-bottom: 2px solid var(--color-tertiary);
 }
 
 .main-content #menu_open.overlay {
@@ -208,7 +217,7 @@ body {
 .main-content .content-wrap .logo {
   width: 200px;
   height: 200px;
-  background-color: brown;
+  background-color: yellow;
   border-radius: 999px;
   margin: 10rem auto 0;
 }
@@ -216,10 +225,19 @@ body {
 .main-content .content-wrap h1 {
   padding: 80px 0px 50px 0px;
   font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: var(--color-linear);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-content .content-wrap h2 {
+  padding: 80px 0px 50px 0px;
+  font-size: 2rem;
   font-weight: 500;
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left bottom, left top, from(#F22E2E), to(#8C1837));
-  background: linear-gradient(to top, #F22E2E, #8C1837);
+  background: var(--color-linear);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -289,6 +307,87 @@ body {
   }
   .main-content .content-wrap h1 {
     font-size: 2rem;
+    text-align: center;
+  }
+  .main-content .content-wrap h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  .main-content #menu_open ul li a {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    width: 100%;
+    height: 100vh;
+  }
+  .main-content #menu_open ul li a {
+    font-size: 2rem;
+  }
+}
+
+footer {
+  background-color: var(--color-bgyellow);
+  height: 55px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .mentionslegales {
+  margin: 0 auto;
+}
+
+footer .mentionslegales a {
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-primary);
+  cursor: pointer;
+}
+
+footer .mentionslegales :hover {
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+footer p {
+  margin: 0 auto;
+}
+
+footer p a {
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+footer p :hover {
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 70px;
+  }
+  footer .mentionslegales {
+    margin: 10px 0px;
+  }
+  footer p {
+    padding: 10px 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
