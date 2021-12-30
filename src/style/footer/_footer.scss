@@ -2,51 +2,58 @@ footer {
     background-color: var(--color-bgyellow);
     height: 55px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     .mentionslegales {
-        margin: 0 auto;
-        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0px;
         a {
             font-size: 1rem;
             color: #000;
             text-decoration: none;
             border-bottom: 2px solid var(--color-primary);
             cursor: pointer;
+            &:hover {
+                border-bottom: 2px solid var(--color-secondary);
+            }
         }
-        :hover {
-            border-bottom: 2px solid var(--color-secondary);
+        
+
+        p {
+            // margin: 0 auto;
+    
+            a {
+                font-size: 1rem;
+                color: #000;
+                text-decoration: none;
+                border-bottom: 2px solid var(--color-primary);
+                cursor: pointer;
+                &:hover {
+                    border-bottom: 2px solid var(--color-secondary);
+                }
+            }
+            
         }
     }
 
-    p {
-        margin: 0 auto;
-
-        a {
-            font-size: 1rem;
-            color: #000;
-            text-decoration: none;
-            border-bottom: 2px solid var(--color-primary);
-        }
-        :hover {
-            border-bottom: 2px solid var(--color-secondary);
-        }
-    }
 }
 
 @media screen and (max-width: 768px) {
     footer {
-        flex-direction: column;
-        height: 70px;
-
+        height: 80px;
+        
         .mentionslegales {
-            margin: 10px 0px;
+            
+        flex-direction: column;
+            text-align: center;
+            padding-top: 15px;
+
+            p {
+                padding: 15px 0px;
+            }
         }
 
-        p {
-            padding: 10px 0px;
-        }
     }
 }
