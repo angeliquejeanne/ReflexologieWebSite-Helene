@@ -2,15 +2,13 @@ footer {
     background-color: var(--color-bgyellow);
     height: 55px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     .mentionslegales {
-        margin: 0 auto;
-        padding-top: 15px;
-        text-align: center;
-        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0px;
         a {
             font-size: 1rem;
             color: #000;
@@ -24,7 +22,7 @@ footer {
         
 
         p {
-            margin: 0 auto;
+            // margin: 0 auto;
     
             a {
                 font-size: 1rem;
@@ -44,11 +42,14 @@ footer {
 
 @media screen and (max-width: 768px) {
     footer {
-        flex-direction: column;
         height: 80px;
-
+        
         .mentionslegales {
-            margin: 10px 0px;
+            
+        flex-direction: column;
+            text-align: center;
+            padding-top: 15px;
+
             p {
                 padding: 15px 0px;
             }
