@@ -8,6 +8,8 @@ footer {
 
     .mentionslegales {
         margin: 0 auto;
+        padding-top: 15px;
+        text-align: center;
         
         a {
             font-size: 1rem;
@@ -15,38 +17,42 @@ footer {
             text-decoration: none;
             border-bottom: 2px solid var(--color-primary);
             cursor: pointer;
+            &:hover {
+                border-bottom: 2px solid var(--color-secondary);
+            }
         }
-        :hover {
-            border-bottom: 2px solid var(--color-secondary);
+        
+
+        p {
+            margin: 0 auto;
+    
+            a {
+                font-size: 1rem;
+                color: #000;
+                text-decoration: none;
+                border-bottom: 2px solid var(--color-primary);
+                cursor: pointer;
+                &:hover {
+                    border-bottom: 2px solid var(--color-secondary);
+                }
+            }
+            
         }
     }
 
-    p {
-        margin: 0 auto;
-
-        a {
-            font-size: 1rem;
-            color: #000;
-            text-decoration: none;
-            border-bottom: 2px solid var(--color-primary);
-        }
-        :hover {
-            border-bottom: 2px solid var(--color-secondary);
-        }
-    }
 }
 
 @media screen and (max-width: 768px) {
     footer {
         flex-direction: column;
-        height: 70px;
+        height: 80px;
 
         .mentionslegales {
             margin: 10px 0px;
+            p {
+                padding: 15px 0px;
+            }
         }
 
-        p {
-            padding: 10px 0px;
-        }
     }
 }

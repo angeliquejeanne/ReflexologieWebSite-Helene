@@ -348,6 +348,8 @@ footer {
 
 footer .mentionslegales {
   margin: 0 auto;
+  padding-top: 15px;
+  text-align: center;
 }
 
 footer .mentionslegales a {
@@ -358,22 +360,23 @@ footer .mentionslegales a {
   cursor: pointer;
 }
 
-footer .mentionslegales :hover {
+footer .mentionslegales a:hover {
   border-bottom: 2px solid var(--color-secondary);
 }
 
-footer p {
+footer .mentionslegales p {
   margin: 0 auto;
 }
 
-footer p a {
+footer .mentionslegales p a {
   font-size: 1rem;
   color: #000;
   text-decoration: none;
   border-bottom: 2px solid var(--color-primary);
+  cursor: pointer;
 }
 
-footer p :hover {
+footer .mentionslegales p a:hover {
   border-bottom: 2px solid var(--color-secondary);
 }
 
@@ -383,13 +386,13 @@ footer p :hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 70px;
+    height: 80px;
   }
   footer .mentionslegales {
     margin: 10px 0px;
   }
-  footer p {
-    padding: 10px 0px;
+  footer .mentionslegales p {
+    padding: 15px 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
