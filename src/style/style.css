@@ -450,7 +450,7 @@ body {
 
 .opening-contact-container {
   width: 100%;
-  background-color: pink;
+  background-color: var(--color-bg-neutre);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
