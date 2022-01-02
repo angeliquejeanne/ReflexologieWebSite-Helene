@@ -1,0 +1,37 @@
+#price-container {
+    background-color: var(--color-bgyellow);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem 0px;
+
+
+    .price-container {
+        background-color: var(--color-bg-neutre);
+        display: flex;
+        justify-content: center;
+        margin: 10px auto;
+        width: 100%;
+        max-width: 1200px;
+    
+        .price-img {
+            padding: 30px;
+        }
+    
+        .price-content {
+            padding: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #price-container {
+        .price-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}
