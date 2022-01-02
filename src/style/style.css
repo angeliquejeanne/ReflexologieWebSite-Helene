@@ -14,10 +14,10 @@ body {
 }
 
 :root {
-  --color-primary: #F22E2E;
+  --color-primary: #B81934;
   --color-secondary: #F29F05;
   --color-tertiary: #F27983;
-  --color-linear: linear-gradient(to bottom,#F22E2E 30%, #8C1837 85%);
+  --color-linear: linear-gradient(to bottom,#fa5757 40%, #8C1837 85%);
   --color-text: #000;
   --color-white: #fff;
   --color-bgyellow: #F2DCB3;
@@ -178,6 +178,7 @@ body {
   padding-bottom: 10px;
   text-transform: uppercase;
   background: var(--color-linear);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 1;
@@ -230,6 +231,7 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   background: var(--color-linear);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -237,9 +239,10 @@ body {
 .main-content .content-wrap h2 {
   padding: 80px 0px 50px 0px;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   background: var(--color-linear);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -288,7 +291,42 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 928px) and (orientation: landscape) {
+  .main-content {
+    background-color: yellowgreen !important;
+  }
+  .main-content .content-wrap {
+    width: 100%;
+    height: 100%;
+  }
+  .main-content .content-wrap .logo {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 999px;
+    margin: .5rem auto 0;
+  }
+  .main-content .content-wrap h1 {
+    padding: 40px 0px 20px 0px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .main-content .content-wrap h2 {
+    padding: 40px 0px 20px 0px;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  .main-content #menu_open ul {
+    margin-top: -50px;
+  }
+  .main-content #menu_open ul li a {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
   .main-content {
     width: 100%;
     height: 100vh;
@@ -327,7 +365,86 @@ body {
     height: 100vh;
   }
   .main-content #menu_open ul li a {
-    font-size: 2rem;
+    font-size: 2.2rem;
+  }
+}
+
+#mentions-container {
+  background-color: var(--color-bg-neutre);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 0px;
+}
+
+#mentions-container h2 {
+  color: var(--color-primary);
+  font-size: 2rem;
+  padding: 1rem 0rem;
+}
+
+#mentions-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  margin: 10px auto;
+  margin: 0px auto;
+  max-width: 900px;
+  padding: 10px 0px;
+}
+
+#mentions-container div h3 {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+#mentions-container div p {
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+#mentions-container div p span {
+  font-weight: 600;
+}
+
+#mentions-container div p a {
+  color: var(--color-text);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-tertiary);
+  cursor: pointer;
+}
+
+#mentions-container div p a:hover {
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+#mentions-container .termsandconditions-content p {
+  padding: 10px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  #mentions-container h2 {
+    font-size: 1.8rem;
+  }
+  #mentions-container div {
+    text-align: left;
+    margin: 0px auto;
+    padding: 10px 10px 0px 10px;
+  }
+  #mentions-container div h3 {
+    font-size: 1.2rem;
   }
 }
 

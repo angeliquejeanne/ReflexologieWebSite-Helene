@@ -134,6 +134,7 @@
                 padding-bottom: 10px;
                 text-transform: uppercase;
                 background: var(--color-linear);
+                background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 z-index: 1;
@@ -178,15 +179,17 @@
             font-weight: 600;
             text-transform: uppercase;
             background: var(--color-linear);
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         h2 {
             padding: 80px 0px 50px 0px;
             font-size: 2rem;
-            font-weight: 500;
+            font-weight: 600;
             text-transform: uppercase;
             background: var(--color-linear);
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -214,8 +217,49 @@
       opacity: 1;
     }
 }
+@media screen and (max-width: 928px) and (orientation: landscape) {
+    .main-content {
+        background-color: yellowgreen!important;
 
-@media screen and (max-width: 768px) {
+        .content-wrap {
+            width: 100%;
+            height: 100%;
+
+            .logo {
+                width: 50px;
+                height: 50px;
+                background-color: yellow;
+                border-radius: 999px;
+                margin: .5rem auto 0;
+            }
+            h1 {
+                padding: 40px 0px 20px 0px;
+                font-size: 2rem;
+                text-align: center;
+            }
+            h2 {
+                padding: 40px 0px 20px 0px;
+                font-size: 1.4rem;
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+
+        #menu_open {
+            ul {
+                margin-top: -50px;
+                li {
+                    a {
+                        font-size: 1.3rem;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
     .main-content {
         width: 100%;
         height: 100vh;
@@ -266,10 +310,11 @@
             ul {
                 li {
                     a {
-                        font-size: 2rem;
+                        font-size: 2.2rem;
                     }
                 }
             }
         }
     }
 }
+
