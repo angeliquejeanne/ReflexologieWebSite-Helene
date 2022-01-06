@@ -1,0 +1,14 @@
+main {
+    background-color: yellowgreen;
+    width: 100%;
+
+    h2 {
+        color: var(--color-primary);
+    }
+    p {
+        color: var(--color-text);
+    }
+    a {
+        color: var(--color-secondary);
+    }
+}

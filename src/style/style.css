@@ -369,6 +369,206 @@ body {
   }
 }
 
+main {
+  background-color: yellowgreen;
+  width: 100%;
+}
+
+main h2 {
+  color: var(--color-primary);
+}
+
+main p {
+  color: var(--color-text);
+}
+
+main a {
+  color: var(--color-secondary);
+}
+
+.reflexologie-container {
+  background-color: var(--color-bgyellow);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px auto;
+  padding: 30px 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reflexologie-container .text-content {
+  width: 880px;
+}
+
+.reflexologie-container .text-content h2 {
+  font-size: 1.8rem;
+}
+
+.reflexologie-container .text-content p {
+  margin: 30px auto;
+  font-size: 1.2rem;
+}
+
+.reflexologie-container .text-content a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.reflexologie-container .img-content {
+  margin: 10px auto;
+}
+
+.praticienne-container {
+  background-color: var(--color-bg-neutre);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px auto;
+  padding: 30px 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.praticienne-container .text-content {
+  width: 880px;
+  padding-left: 20px;
+}
+
+.praticienne-container .text-content h2 {
+  font-size: 1.8rem;
+}
+
+.praticienne-container .text-content p {
+  margin: 30px auto;
+  font-size: 1.2rem;
+}
+
+.praticienne-container .text-content a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.praticienne-container .img-content {
+  margin: 10px auto;
+}
+
+.gallery-container {
+  background-color: var(--color-bgyellow);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px auto;
+  padding: 30px 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery-container .text-content {
+  width: 880px;
+}
+
+.gallery-container .text-content h2 {
+  font-size: 1.8rem;
+  margin: 30px auto;
+}
+
+.gallery-container .text-content a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.gallery-container .gallery-content {
+  background-color: var(--color-bg-y);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery-container .gallery-content img {
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .reflexologie-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 0px 5px;
+    text-align: center;
+  }
+  .reflexologie-container .text-content {
+    width: 100%;
+  }
+  .reflexologie-container .img-content {
+    width: 100%;
+  }
+  .reflexologie-container .img-content img {
+    max-width: 100%;
+  }
+  .praticienne-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+    padding: 0px 5px;
+    text-align: center;
+  }
+  .praticienne-container .text-content {
+    width: 100%;
+  }
+  .praticienne-container .img-content {
+    width: 100%;
+  }
+  .praticienne-container .img-content img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1092px) {
+  .gallery-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 0px 5px;
+    text-align: center;
+    margin: 0px auto;
+  }
+  .gallery-container .text-content {
+    width: 100%;
+  }
+  .gallery-container .gallery-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .gallery-container .gallery-content img {
+    max-width: 100%;
+  }
+}
+
 #mentions-container {
   background-color: var(--color-bg-neutre);
   width: 100%;
