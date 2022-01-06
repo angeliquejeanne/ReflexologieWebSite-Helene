@@ -1,51 +1,149 @@
-#showcase {
-    height: 100vh;
-    width: 100%;
-    color: blue;
-    text-align: center;
-    background-color: coral;
-    // background-image: url(../../img/reflexologie-plantaire.jpg);
+.reflexologie-container {
+    background-color: var(--color-bgyellow);
+    display: flex;
+    margin: 0px auto;
+    padding: 30px 100px;
+    align-items: center;
+    
 
+    .text-content {
+        width: 880px;
 
-    .overlay {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.3);
-        z-index: 1;
-    }
-
-    .bg-image {
-        position: absolute;
-        background-image: url('https://raw.githubusercontent.com/jeanne-s-dev/ReflexologieWebSite-Helene/main/src/img/225690550_106623021721234_5136931006424740545_n.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        display: block;
-    }
-
-    .content-wrap {
-        position: relative;
-        z-index: 10;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-
-        .logo {
-            width: 50px;
-            height: 50px;
-            background-color: chartreuse;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
+        h2 {
+            font-size: 1.8rem;
         }
-        h1 {
-            
+        p   {
+            margin: 30px auto;
+            font-size: 1.2rem;
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+    }
+    .img-content {
+        margin: 10px auto;
+    }
+}
+
+.praticienne-container {
+    background-color: var(--color-bg-neutre);
+    display: flex;
+    margin: 0px auto;
+    padding: 30px 100px;
+    align-items: center;
+
+
+    .text-content {
+        width: 880px;
+        padding-left: 20px;
+
+        h2 {
+            font-size: 1.8rem;
+        }
+        p   {
+            margin: 30px auto;
+            font-size: 1.2rem;
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+    }
+    .img-content {
+        margin: 10px auto;
+    }
+}
+
+.gallery-container {
+    background-color: var(--color-bgyellow);
+    display: flex;
+    margin: 0px auto;
+    padding: 30px 100px;
+    align-items: center;
+
+
+    .text-content {
+        width: 880px;
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 30px auto;
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+    }
+    .gallery-content {
+        background-color: var(--color-bg-y);
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        img {
+            margin: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .reflexologie-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 5px;
+        text-align: center;
+
+        .text-content {
+            width: 100%;
+        }
+        .img-content {
+            width: 100%;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    .praticienne-container {
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0px 5px;
+        text-align: center;
+
+        .text-content {
+            width: 100%;
+        }
+        .img-content {
+            width: 100%;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1092px) {
+    .gallery-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 5px;
+        text-align: center;
+        margin: 0px auto;
+
+        .text-content {
+            width: 100%;
+        }
+        .gallery-content {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            img {
+                max-width: 100%;
+            }
         }
     }
 }
