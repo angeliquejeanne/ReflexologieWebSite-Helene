@@ -6,7 +6,6 @@
 }
 
 body {
-  background-color: #fa0000;
   height: 100vh;
   width: 100%;
   top: 0;
@@ -294,9 +293,6 @@ body {
 }
 
 @media screen and (max-width: 928px) and (orientation: landscape) {
-  .main-content {
-    background-color: yellowgreen !important;
-  }
   .main-content .content-wrap {
     width: 100%;
     height: 100%;
