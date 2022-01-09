@@ -400,6 +400,15 @@ main a {
   color: var(--color-secondary);
 }
 
+main .bg-about {
+  background-color: var(--color-bgyellow);
+}
+
+main .bg-about .text-content {
+  text-align: left;
+  margin: 0 auto;
+}
+
 .reflexologie-container {
   background-color: var(--color-bgyellow);
   display: -webkit-box;
