@@ -11,4 +11,12 @@ main {
     a {
         color: var(--color-secondary);
     }
+    .bg-about {
+        background-color: var(--color-bgyellow);
+        
+        .text-content {
+            text-align: left;
+            margin: 0 auto;
+        }
+    }
 }
