@@ -520,7 +520,8 @@ main .bg-about .text-content {
 }
 
 .gallery-container .gallery-content img {
-  margin: 10px;
+  margin: 0px auto;
+  padding: 10px 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -591,11 +592,10 @@ main .bg-about .text-content {
     max-width: 100%;
   }
   .gallery-container .gallery-content .modal {
-    background-color: chartreuse;
     width: 100%;
   }
   .gallery-container .gallery-content .modal span {
-    color: red;
+    color: var(--color-tertiary);
   }
   .gallery-container .gallery-content .modal .modal-content {
     max-width: 100%;
@@ -732,7 +732,6 @@ main .bg-about .text-content {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
   max-width: 700px;
 }
 

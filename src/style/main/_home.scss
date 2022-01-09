@@ -85,7 +85,8 @@
         align-items: center;
 
         img {
-            margin: 10px;
+            margin: 0px auto;
+            padding: 10px 10px;
         }
     }
 }
@@ -145,10 +146,9 @@
                 max-width: 100%;
             }
             .modal {
-                background-color: chartreuse;
                 width: 100%;
                 span {
-                    color: red;
+                    color: var(--color-tertiary);
                 }
                 .modal-content {
                     max-width: 100%;
