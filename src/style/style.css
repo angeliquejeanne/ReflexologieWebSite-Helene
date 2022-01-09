@@ -319,6 +319,10 @@ body {
     text-align: center;
     font-weight: bold;
   }
+  .main-content #bg_menu {
+    top: 35px;
+    left: 40px;
+  }
   .main-content #menu_open ul {
     margin-top: -50px;
   }
@@ -354,10 +358,12 @@ body {
     height: 100px;
   }
   .main-content .content-wrap h1 {
+    padding: 40px 0px 20px 0px;
     font-size: 2rem;
     text-align: center;
   }
   .main-content .content-wrap h2 {
+    padding: 40px 0px 20px 0px;
     font-size: 1.4rem;
     text-align: center;
     font-weight: bold;

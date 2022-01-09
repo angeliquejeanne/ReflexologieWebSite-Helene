@@ -246,7 +246,10 @@
                 font-weight: bold;
             }
         }
-
+        #bg_menu {
+            top: 35px;
+            left: 40px;        
+        }
         #menu_open {
             ul {
                 margin-top: -50px;
@@ -285,10 +288,12 @@
                 // margin: 1rem auto 0;
             }
             h1 {
+                padding: 40px 0px 20px 0px;
                 font-size: 2rem;
                 text-align: center;
             }
             h2 {
+                padding: 40px 0px 20px 0px;
                 font-size: 1.4rem;
                 text-align: center;
                 font-weight: bold;
